@@ -16,10 +16,9 @@
 │   └── tensor_page.py       # Page Object для tensor.ru
 ├── tests/                    # Тесты
 │   ├── __init__.py
-│   ├── test_scenario1.py    # Тесты для Сценария 1
-│   └── test_scenario2.py    # Тесты для Сценария 2
-├── conftest.py              # Pytest конфигурация и fixtures
-├── pytest.ini               # Pytest настройки
+│   ├── test_scenario_1.py    # Тесты для Сценария 1
+│   └── test_scenario_2.py    # Тесты для Сценария 2
+├── conftest.py              # Pytest конфигурация
 ├── requirements.txt         # Зависимости проекта
 └── README.md               # Этот файл
 ```
@@ -60,18 +59,8 @@ pytest
 
 ```bash
 # Сценарий 1
-pytest -m scenario1
+pytest tests/test_scenario_1.py -s
 
 # Сценарий 2
-pytest -m scenario2
-
-# Smoke тесты
-pytest -m smoke
-```
-
-### Запуск конкретного файла
-
-```bash
-pytest tests/test_scenario1.py
-pytest tests/test_scenario2.py
+pytest tests/test_scenario_2.py -s
 ```
