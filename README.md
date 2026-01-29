@@ -20,7 +20,7 @@
 │   └── test_scenario_2.py    # Тесты для Сценария 2
 ├── conftest.py              # Pytest конфигурация
 ├── requirements.txt         # Зависимости проекта
-└── README.md               # Этот файл
+└── README.md           
 ```
 
 ## Установка
